@@ -1,6 +1,6 @@
 {
     "family": "prometheus-grafana-definition",
-	"taskRoleArn": "arn:aws:iam::566410102185:role/ecs-instance-role"
+    "taskRoleArn": "arn:aws:iam::566410102185:role/ecs-service-role",
         "containerDefinitions": [
             {
                 "name": "init-container",
@@ -11,7 +11,7 @@
                 "essential": false,
                 "command": [
                     "wget",
-                    "https://raw.githubusercontent.com/santosh07bec/ecs-monitoring-with-prometheus-grafana/master/prometheus.yml",
+                    "https://raw.githubusercontent.com/FanWu6/monitor-grafana/main/prometheus.yml?token=GHSAT0AAAAAABTEEYTUI3ODHLGJIXUIRVOAYTOWLKQ",
                     "-P",
                     "/mnt"
                 ],

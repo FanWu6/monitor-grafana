@@ -22,7 +22,7 @@ services:
     image: alpine:latest
     volumes:
       - prometheus_config:/mnt/
-    command: wget https://raw.githubusercontent.com/santosh07bec/ecs-monitoring-with-prometheus-grafana/master/prometheus.yml -P /mnt/
+    command: wget https://raw.githubusercontent.com/FanWu6/monitor-grafana/main/prometheus.yml?token=GHSAT0AAAAAABTEEYTUI3ODHLGJIXUIRVOAYTOWLKQ -P /mnt/
   grafana:
     image: grafana/grafana
     ports:
